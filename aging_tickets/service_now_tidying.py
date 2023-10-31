@@ -45,7 +45,7 @@ import datetime as dt
 # Read in current SNOW export and sort by ticket number
 # - default to current date, uncomment and edit direct setting for different date
 csv_date_string=dt.datetime.now().strftime('%Y_%m_%d')
-csv_date_string="2023_10_30"
+# csv_date_string="2023_10_30"
 #
 csv_name="snow_all_tickets_"+csv_date_string+".csv"
 sdf=pd.read_csv(csv_name,encoding = "ISO-8859-1")
